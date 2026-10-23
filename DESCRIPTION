@@ -1,0 +1,24 @@
+Package: tabicl2synthr
+Title: Synthetic Tabular Data Generation with TabICLv2
+Version: 0.0.1
+Authors@R: c(
+    person("Alexander", "Kowarik", , "alex@kowarik.net", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8598-4130")))
+Description: Generates synthetic tabular data sets that mimic the structure of an
+    input data set. The wrapper calls the 'TabICLUnsupervised' class of the
+    Python 'tabicl' package through 'reticulate', which models the joint
+    distribution of all columns as a product of conditionals using the
+    pretrained TabICLv2 foundation model and draws new rows by autoregressive
+    sampling. Numeric, integer, logical and categorical columns are supported
+    and the original column schema is restored in the generated data.
+License: GPL-3 + file LICENSE
+Depends: R (>= 4.1.0)
+Imports:
+    utils
+Suggests:
+    reticulate,
+    tinytest
+SystemRequirements: Python (>= 3.10), tabicl (2.2.x)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1

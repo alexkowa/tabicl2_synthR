@@ -1,0 +1,3 @@
+# Python >= 3.10. Plain tabicl is sufficient: synthetic data generation uses
+# the pretrained TabICLv2 checkpoints and does not need the finetune extra.
+tabicl==2.2.0
